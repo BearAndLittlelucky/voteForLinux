@@ -1,0 +1,1238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1138</width>
+    <height>766</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>计票程序</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="voteImageSource.qrc">
+    <normaloff>:/vote/image/star-circle.png</normaloff>:/vote/image/star-circle.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="2">
+    <widget class="QWidget" name="widget_2" native="true">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="leftMargin">
+       <number>25</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pushButton_windowStatus">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;满屏/正常大小显示&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_windowStatus{
+	
+	border-image: url(:/vote/image/fullscreen.png);
+	border-width: 5px;
+}
+#pushButton_windowStatus:hover
+{
+	
+	border-image: url(:/vote/image/fullscreen-press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_windowStatus:pressed
+{
+	border-image: url(:/vote/image/fullscreen-press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="12" column="2">
+       <widget class="QPushButton" name="pushButton_down_font_size">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;减小选中字体大小&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_down_font_size{
+	border-image: url(:/vote/image/font_size_down.png);
+	border-width: 5px;
+}
+#pushButton_down_font_size:hover
+{
+	border-image: url(:/vote/image/font_size_down_press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_down_font_size:pressed
+{
+	border-image: url(:/vote/image/font_size_down_press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="2">
+       <widget class="QPushButton" name="pushButton_delCol">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;删除一列&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_delCol{
+	border-image: url(:/vote/image/减号.png);
+	border-width: 5px;
+}
+#pushButton_delCol:hover
+{
+	border-image: url(:/vote/image/减号-press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_delCol:pressed
+{
+	border-image: url(:/vote/image/减号-press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="8" column="2">
+       <widget class="QPushButton" name="pushButton_addCol">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;添加一列&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_addCol{
+	border-image: url(:/vote/image/加.png);
+	border-width: 5px;
+}
+#pushButton_addCol:hover
+{
+	border-image: url(:/vote/image/加-press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_addCol:pressed
+{
+	border-image: url(:/vote/image/加-press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="Line" name="line_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="Line" name="line_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="pushButton_menu">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;显示/隐藏右侧功能区&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_menu{
+	border-image: url(:/vote/image/右箭头.png);
+	border-width: 5px;
+}
+#pushButton_menu:hover
+{
+	border-image: url(:/vote/image/右箭头-press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_menu:pressed
+{
+	border-image: url(:/vote/image/右箭头-press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="11" column="2">
+       <widget class="QPushButton" name="pushButton_add_font_size">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;增加选中字体大小&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_add_font_size{
+	border-image: url(:/vote/image/font_size_up.png);
+	border-width: 5px;
+}
+#pushButton_add_font_size:hover
+{
+	border-image: url(:/vote/image/font_size_up_press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_add_font_size:pressed
+{
+	border-image: url(:/vote/image/font_size_up_press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="13" column="2">
+       <widget class="Line" name="line_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="pushButton_delLine">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;删除一行&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_delLine{
+	border-image: url(:/vote/image/减号.png);
+	border-width: 5px;
+}
+#pushButton_delLine:hover
+{
+	border-image: url(:/vote/image/减号-press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_delLine:pressed
+{
+	border-image: url(:/vote/image/减号-press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QLabel" name="label_6">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>列</string>
+        </property>
+       </widget>
+      </item>
+      <item row="14" column="2">
+       <widget class="QPushButton" name="pushButton_head_show">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;显示表头及网格&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_head_show{
+	border-image: url(:/vote/image/表头显示.png);
+	border-width: 5px;
+}
+#pushButton_head_show:hover
+{
+	border-image: url(:/vote/image/表头显示-press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_head_show:pressed
+{
+	border-image: url(:/vote/image/表头显示-press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QLabel" name="label_5">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>黑体</family>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>行</string>
+        </property>
+       </widget>
+      </item>
+      <item row="10" column="2">
+       <widget class="Line" name="line_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="pushButton_addLine">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;添加一行&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_addLine{
+	
+	
+	border-image: url(:/vote/image/加.png);
+	border-width: 5px;
+}
+#pushButton_addLine:hover
+{
+	
+	
+	border-image: url(:/vote/image/加-press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_addLine:pressed
+{
+	border-image: url(:/vote/image/加-press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="15" column="2">
+       <widget class="QPushButton" name="pushButton_head_hide">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;隐藏表头及网格&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#pushButton_head_hide{
+	border-image: url(:/vote/image/表头隐藏.png);
+	border-width: 5px;
+}
+#pushButton_head_hide:hover
+{
+	border-image: url(:/vote/image/表头隐藏-press.png);
+	border-width: 0px;
+}
+ 
+#pushButton_head_hide:pressed
+{
+	border-image: url(:/vote/image/表头隐藏-press.png);
+	border-width: 3px;
+
+}
+ </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" rowspan="16">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="font">
+         <font>
+          <family>仿宋</family>
+          <pointsize>19</pointsize>
+         </font>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::CustomContextMenu</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">#tableWidget{border:None;
+border-image:none;
+background-color:transparent;}
+
+
+
+/*表头*/
+QHeaderView::section{
+text-align:center;
+padding:3px;
+margin:0px;
+border:1px solid gray;
+border-left-width:0;
+
+}
+
+
+
+QScrollBar:vertical{ 
+    width:12px;  
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+    background: #3c90ff;
+} 
+QScrollBar::handle:vertical{ 
+    background:#3c90ff;
+    border-radius: 4px;
+    width:8px; 
+    min-height:91px; 
+    border-style:flat;
+}
+QScrollBar::handle:vertical::hover{ 
+    background: #4039ff;
+    border-radius: 4px;
+    width:8px; 
+}
+QScrollBar::handle:vertical::pressed{ 
+    background: #4039ff;
+    border-radius:4px;
+    width:8px; 
+}
+QScrollBar::sub-page:vertical {
+    background: #ffffff;
+border-style:flat;
+}
+QScrollBar::add-page:vertical {
+   background: #ffffff;
+border-style:flat;
+}
+QScrollBar::add-line:vertical{
+   background: #ffffff;
+}
+QScrollBar::sub-line:vertical {
+   background:#ffffff;
+}
+QScrollBar:horizontal{ 
+    height:12px;  
+    border-style:flat;
+    border-radius: 4px;
+    border:0px;
+background: #3c90ff;
+} 
+QScrollBar::handle:horizontal{ 
+    background: #3c90ff;
+    border-radius: 4px;
+    height:8px; 
+    min-width:91px; 
+    border-style:flat;
+}
+QScrollBar::handle:horizontal::hover{ 
+    background: #4039ff;
+    border-radius: 4px;
+    height:8px; 
+}
+QScrollBar::handle:horizontal::pressed{ 
+    background:  #4039ff;
+    border-radius:4px;
+    height:8px; 
+}
+QScrollBar::sub-page:horizontal {
+    background: #ffffff;
+    border-style:flat;
+}
+QScrollBar::add-page:horizontal {
+   background: #ffffff;
+    border-style:flat;
+}
+QScrollBar::sub-line:horizontal {
+   background: #19191A;
+}
+QScrollBar::add-line:horizontal{
+   background: #ffffff;
+}
+
+</string>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAsNeeded</enum>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
+        </property>
+        <property name="dragEnabled">
+         <bool>false</bool>
+        </property>
+        <property name="dragDropOverwriteMode">
+         <bool>false</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::NoDragDrop</enum>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::ExtendedSelection</enum>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerItem</enum>
+        </property>
+        <property name="showGrid">
+         <bool>true</bool>
+        </property>
+        <property name="gridStyle">
+         <enum>Qt::DotLine</enum>
+        </property>
+        <property name="rowCount">
+         <number>8</number>
+        </property>
+        <property name="columnCount">
+         <number>14</number>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderHighlightSections">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderCascadingSectionResizes">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderHighlightSections">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="verticalHeaderStretchLastSection">
+         <bool>false</bool>
+        </attribute>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <row/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <column/>
+        <item row="0" column="0">
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="3" rowspan="16">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>300</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>仿宋</family>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="title">
+         <string>功能设置区</string>
+        </property>
+        <widget class="QPushButton" name="pushButton_split">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>250</y>
+           <width>231</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+#pushButton_split
+{
+	color: white;
+	background-color:  #6973ff;
+	border-width: 3px;
+	border-radius: 15px;
+	font: 14pt &quot;黑体&quot;;
+
+}
+#pushButton_split:hover
+{
+	color: white;
+	background-color: #3f31ff;
+	border-width: 3px;
+	border-radius: 15px;
+}
+ 
+#pushButton_split:pressed
+{
+	color: white;
+	background-color:  #3f31ff;
+	border-width: 5px;
+	border-radius: 15px;
+	font: 12pt &quot;黑体&quot;;
+}
+ </string>
+         </property>
+         <property name="text">
+          <string>清空单元格</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>440</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>仿宋</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>调整选中单元格字体大小：</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_combine">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>200</y>
+           <width>231</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton_combine
+{
+	color: white;
+	background-color:  #6973ff;
+	border-width: 3px;
+	border-radius: 15px;
+	font: 14pt &quot;黑体&quot;;
+
+}
+#pushButton_combine:hover
+{
+	color: white;
+	background-color: #3f31ff;
+	border-width: 3px;
+	border-radius: 15px;
+}
+ 
+#pushButton_combine:pressed
+{
+	color: white;
+	background-color:  #3f31ff;
+	border-width: 5px;
+	border-radius: 15px;
+	font: 12pt &quot;黑体&quot;;
+}
+ </string>
+         </property>
+         <property name="text">
+          <string>重置表格</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+        </widget>
+        <widget class="QDoubleSpinBox" name="doubleSpinBox">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>480</y>
+           <width>191</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">/*QSpinBox*/
+QDoubleSpinBox {
+padding-right: 15px; /* make room for the arrows */
+border:1px solid rgb(221, 221, 221) ;
+border-radius:10px;
+font-size:18px;
+}
+
+QDoubleSpinBox::up-button {
+	border-image: url(:/vote/image/arrow-up.png);
+}
+
+QDoubleSpinBox::down-button {
+	border-image: url(:/vote/image/arrow-down-filling.png);
+}
+
+QDoubleSpinBox::up-button:pressed {
+margin-top:3px;
+}
+
+QDoubleSpinBox::down-button:pressed {
+margin-bottom:3px;
+}
+</string>
+         </property>
+         <property name="value">
+          <double>19.000000000000000</double>
+         </property>
+        </widget>
+        <widget class="Line" name="line">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>310</y>
+           <width>241</width>
+           <height>20</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+        <widget class="QFontComboBox" name="fontComboBox">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>390</y>
+           <width>221</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFontComboBox::down-arrow
+ {
+	border-image: url(:/vote/image/arrow-down-filling.png);
+
+}
+
+QComboBox QAbstractItemView::item { 
+min-height: 34px;
+ }
+QFontComboBox::drop-down {
+border:0px solid gray;width: 30px;
+}
+QFontComboBox{
+font-size:18px;
+border:1px solid rgb(221, 221, 221) ;
+border-radius:10px;
+
+}
+</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>350</y>
+           <width>241</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>仿宋</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>调整选中单元格字体：</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_3">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>60</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>仿宋</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>设置行数：</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_row">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>50</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#lineEdit_row {
+padding-right: 15px; /* make room for the arrows */
+border:1px solid rgb(221, 221, 221) ;
+border-radius:10px;
+font-size:18px;
+
+}</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_column">
+         <property name="geometry">
+          <rect>
+           <x>150</x>
+           <y>100</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#lineEdit_column {
+padding-right: 15px; /* make room for the arrows */
+border:1px solid rgb(221, 221, 221) ;
+border-radius:10px;
+font-size:18px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_4">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>110</y>
+           <width>101</width>
+           <height>16</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>仿宋</family>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>设置列数：</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>150</y>
+           <width>231</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">#pushButton
+{
+	color: white;
+	background-color:  #6973ff;
+	border-width: 3px;
+	border-radius: 15px;
+	font: 14pt &quot;黑体&quot;;
+
+}
+#pushButton:hover
+{
+	color: white;
+	background-color: #3f31ff;
+	border-width: 3px;
+	border-radius: 15px;
+}
+ 
+#pushButton:pressed
+{
+	color: white;
+	background-color:  #3f31ff;
+	border-width: 5px;
+	border-radius: 15px;
+	font: 12pt &quot;黑体&quot;;
+}
+ </string>
+         </property>
+         <property name="text">
+          <string>确   定</string>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="voteImageSource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

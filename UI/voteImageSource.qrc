@@ -1,0 +1,28 @@
+<RCC>
+  <qresource prefix="vote">
+    <file>image/star-circle.png</file>
+    <file>image/表头显示.png</file>
+    <file>image/表头显示-press.png</file>
+    <file>image/表头隐藏.png</file>
+    <file>image/表头隐藏-press.png</file>
+    <file>image/font_size_down.png</file>
+    <file>image/font_size_down_press.png</file>
+    <file>image/font_size_up.png</file>
+    <file>image/font_size_up_press.png</file>
+    <file>image/加.png</file>
+    <file>image/加-press.png</file>
+    <file>image/减号.png</file>
+    <file>image/减号-press.png</file>
+    <file>image/fullscreen.png</file>
+    <file>image/fullscreen-press.png</file>
+    <file>image/缩小.png</file>
+    <file>image/缩小-press.png</file>
+    <file>image/arrow-up.png</file>
+    <file>image/arrow-down-filling.png</file>
+    <file>image/演示文稿1.png</file>
+    <file>image/右箭头.png</file>
+    <file>image/右箭头-press.png</file>
+    <file>image/左箭头.png</file>
+    <file>image/左箭头-press.png</file>
+  </qresource>
+</RCC>
